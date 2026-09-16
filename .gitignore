@@ -17,3 +17,7 @@ yarn-error.log*
 Thumbs.db
 .vscode/
 .idea/
+
+# AI Governance & Workspace Memory
+.ai/
+

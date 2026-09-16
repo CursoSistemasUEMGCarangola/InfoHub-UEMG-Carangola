@@ -140,6 +140,7 @@ body {
   height: 46px;
   width: auto;
   display: block;
+  border-radius: var(--radius-sm);
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
 }
 
@@ -719,6 +720,19 @@ body {
 
 .dialog-list li {
   margin-bottom: var(--spacing-xs);
+}
+
+.dialog-link {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-word;
+  transition: color var(--transition-fast);
+}
+
+.dialog-link:hover {
+  color: var(--color-accent-amber);
 }
 
 .dialog-footer {
