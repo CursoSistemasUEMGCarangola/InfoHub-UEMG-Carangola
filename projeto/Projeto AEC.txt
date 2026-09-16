@@ -1,0 +1,39 @@
+Preciso de uma landing page para o projeto de extensão descrito em
+"GUIA DO PROJETO DE EXTENSÃO.pdf"
+
+A landing page será o hub de acesso a 10 outras páginas web que serão
+desenvolvidas pelos alunos participantes do projeto
+
+A landing page deve seguir todos os padrões, estilos e design de https://www.uemg.br/,
+para se manter como uma solução institucional da instituição de ensino
+
+A pasta "projeto" contém imagens que devem servir de base para a
+construção da landing page
+
+- logo_uemg.png (logo com o fundo transparente)
+- logo_uemg_2.jpg (logo com o fundo branco, pode servir de base para o
+favicon)
+- uemg-fachada-1.jpg (imagem da fachada do prédio principal da Unidade
+Acadêmica de Carangola)
+- uemg-fachada-2.jpg (imagem da fachada do prédio principal da Unidade
+Acadêmica de Carangola)
+
+O projeto é importante porque se trata de uma atividade extensionista
+curricularizada e precisa refletir profissionalismo
+
+A landing page contará com 10 cards, em uma distribuição de 5x2
+(5 linhas com 2 cards por linha).
+
+Cada card apresenta o título do setor que será apresentado.
+Cada card será essencialmente um link para acessar uma página externa em
+uma nova janela.
+
+A landing page deve ser "mobile first", com recurso PWA para funcionar como
+um aplicativo de celular, oferecendo opção para "instalar" no dispositivo do usuário.
+
+O projeto ficará disponível no github com deploy na
+plataforma Vercel
+
+Conteúdos de rodapé como "Sobre o Projeto", "Termos de Uso" e
+"Política de Privacidade" devem se basear no texto do projeto e na essência do
+próprio projeto construído.
