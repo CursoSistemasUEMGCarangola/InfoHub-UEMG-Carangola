@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="InfoHub UEMG Carangola - Portal Institucional de Autoatendimento da Unidade Acadêmica de Carangola. Acesso centralizado aos 10 serviços setoriais desenvolvidos pelos estudantes de Sistemas de Informação."
+    />
+    <meta name="theme-color" content="#003366" />
+    <title>InfoHub UEMG Carangola — Portal de Autoatendimento Institucional</title>
+
+    <!-- PWA & Manifesto -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/images/icon-pwa.svg" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="InfoHub UEMG" />
+
+    <!-- Favicon e Identidade -->
+    <link rel="icon" type="image/svg+xml" href="/images/icon-pwa.svg" />
+    <link rel="alternate icon" type="image/jpeg" href="/images/logo_uemg_2.jpg" />
+    <script type="module" crossorigin src="/assets/index-BEGhN4Fq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ci_tn1g6.css">
+  </head>
+  <body>
+    <!-- Cabeçalho Institucional Oficial UEMG -->
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="/" class="brand-wrapper" title="InfoHub UEMG Carangola — Início">
+          <img
+            src="/images/logo_uemg_2.jpg"
+            alt="Logotipo Oficial da UEMG"
+            class="brand-logo"
+            width="135"
+            height="46"
+          />
+          <div class="brand-divider" aria-hidden="true"></div>
+          <div class="brand-titles">
+            <span class="brand-institution">Universidade do Estado de Minas Gerais</span>
+            <span class="brand-unit">Unidade Carangola • InfoHub</span>
+          </div>
+        </a>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            id="btn-install-pwa"
+            class="btn-install-pwa"
+            style="display: none;"
+            aria-label="Instalar InfoHub no seu dispositivo como aplicativo"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Instalar App</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" role="main">
+      <!-- Seção Hero com Fachada Histórica -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container hero-content">
+          <div class="hero-badge">Canal de Informações Institucionais</div>
+          <h1 id="hero-heading" class="hero-title">
+            InfoHub UEMG Carangola
+          </h1>
+          <p class="hero-lead">
+            Central de informações, normativas e orientações setoriais da Unidade Acadêmica de Carangola.
+            Projetado por estudantes de Sistemas de Informação para proporcionar acesso ágil, transparente e desburocratizado a toda a comunidade acadêmica.
+          </p>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>10 Setores Mapeados</span>
+            </div>
+            <div class="hero-stat-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>Navegação Facilitada</span>
+            </div>
+            <div class="hero-stat-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>Compatível com todos os dispositivos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catálogo de Serviços Setoriais (Grid 5x2) -->
+      <section class="services-section" aria-labelledby="services-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-subtitle">Serviços Acadêmicos & Institucionais</p>
+            <h2 id="services-heading" class="section-title">
+              Selecione o Setor Desejado
+            </h2>
+            <p class="section-description">
+              Clique no setor desejado para consultar normativas, fluxos oficiais, calendários e autoatendimento com a equipe responsável.
+            </p>
+          </header>
+
+          <!-- O Grid 5x2 é renderizado dinamicamente aqui -->
+          <div
+            id="services-grid"
+            class="services-grid"
+            role="region"
+            aria-label="Grade de Serviços Setoriais da UEMG Carangola"
+          >
+            <!-- Conteúdo injetado via JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé Institucional e Governança -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-grid">
+        <div class="footer-info">
+          <h4>InfoHub UEMG Carangola</h4>
+          <p>
+            Atividade de Extensão Curricularizada — Disciplina de Programação 2<br />
+            Curso de Bacharelado em Sistemas de Informação<br />
+            Universidade do Estado de Minas Gerais — Unidade Acadêmica de Carangola
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Institucional & Governança</h4>
+          <ul class="footer-links">
+            <li>
+              <button type="button" class="footer-modal-trigger" data-modal-target="modal-sobre">
+                Sobre o Projeto de Extensão
+              </button>
+            </li>
+            <li>
+              <button type="button" class="footer-modal-trigger" data-modal-target="modal-termos">
+                Termos de Uso
+              </button>
+            </li>
+            <li>
+              <button type="button" class="footer-modal-trigger" data-modal-target="modal-privacidade">
+                Política de Privacidade & LGPD
+              </button>
+            </li>
+            <li>
+              <a href="https://www.uemg.br/" target="_blank" rel="noopener noreferrer">
+                Portal Oficial UEMG ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://www.uemg.br/unidades/carangola" target="_blank" rel="noopener noreferrer">
+                Unidade Carangola ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2026 UEMG Unidade Carangola — Sistemas de Informação. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =======================================================================
+         MODAIS ACESSÍVEIS (<dialog> nativo do HTML5)
+         ======================================================================= -->
+
+    <!-- Modal 1: Sobre o Projeto -->
+    <dialog id="modal-sobre" class="app-dialog" aria-labelledby="modal-sobre-title">
+      <div class="dialog-content">
+        <header class="dialog-header">
+          <div class="dialog-header-title-box">
+            <span class="dialog-badge">Extensão Curricularizada</span>
+            <h3 id="modal-sobre-title" class="dialog-title">Sobre o Projeto InfoHub UEMG Carangola</h3>
+          </div>
+          <button type="button" class="dialog-close-btn" data-close-modal aria-label="Fechar modal Sobre o Projeto">
+            &times;
+          </button>
+        </header>
+        <div class="dialog-body">
+          <p>
+            O <strong>InfoHub UEMG Carangola</strong> é uma atividade de extensão universitária curricularizada realizada no âmbito da disciplina de <strong>Programação 2</strong> do curso de <strong>Bacharelado em Sistemas de Informação</strong> da Universidade do Estado de Minas Gerais (UEMG), Unidade Acadêmica de Carangola.
+          </p>
+          <div class="dialog-highlight-box">
+            <h4>Missão & Desafio</h4>
+            <p>
+              Em um cenário acadêmico real, os estudantes atuaram como Engenheiros de Software e Analistas de Requisitos. Cada equipe de alunos ficou encarregada de entrevistar a comunidade acadêmica e os gestores de setores chave, mapeando fluxos oficiais, regulamentos e regras de negócio para construir protótipos funcionais de autoatendimento.
+            </p>
+          </div>
+          <h4>Competências Práticas Desenvolvidas</h4>
+          <ul class="dialog-list">
+            <li><strong>Engenharia de Requisitos:</strong> Elicitação empírica com stakeholders (entrevistas estruturadas, observação e mapeamento de processos AS-IS / TO-BE).</li>
+            <li><strong>Modelagem Ágil & BDD:</strong> Especificação de User Stories com critérios de aceitação no padrão BDD (<em>Dado-Quando-Então</em>).</li>
+            <li><strong>Prototipação Web Padronizada:</strong> Estruturação semântica em HTML5, responsividade e estilização em CSS3 moderno e interatividade em JavaScript puro.</li>
+            <li><strong>Extensão & Soft Skills:</strong> Escuta ativa, mediação de conflitos informacionais e prestação de serviço de impacto social direto à comunidade acadêmica.</li>
+          </ul>
+          <h4>Ética e Fidelidade das Informações</h4>
+          <p>
+            Todas as informações consolidadas nos portais setoriais baseiam-se em normativas oficiais, portarias institucionais e validação com os respectivos coordenadores e servidores da UEMG Carangola.
+          </p>
+          <h4>Transparência sobre o Uso de Inteligência Artificial</h4>
+          <p>
+            Em consonância com as diretrizes contemporâneas de ética e inovação acadêmica, este projeto utilizou ferramentas de Inteligência Artificial Generativa como par de programação e acelerador técnico sob supervisão e direcionamento pedagógico e docente. Todo o código, decisões arquiteturais e regras de negócio foram integralmente orientados, revisados e homologados pela equipe acadêmica responsável.
+          </p>
+          <h4>Código Aberto & Repositório Institucional</h4>
+          <p>
+            O projeto é de código aberto e está disponível publicamente para consulta, auditoria e colaboração no GitHub:
+            <br />
+            <a
+              href="https://github.com/CursoSistemasUEMGCarangola/InfoHub-UEMG-Carangola"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="dialog-link"
+            >
+              CursoSistemasUEMGCarangola/InfoHub-UEMG-Carangola
+            </a>
+          </p>
+        </div>
+        <footer class="dialog-footer">
+          <button type="button" class="dialog-action-btn" data-close-modal>Compreendi</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <!-- Modal 2: Termos de Uso -->
+    <dialog id="modal-termos" class="app-dialog" aria-labelledby="modal-termos-title">
+      <div class="dialog-content">
+        <header class="dialog-header">
+          <div class="dialog-header-title-box">
+            <span class="dialog-badge">Normativa & Uso</span>
+            <h3 id="modal-termos-title" class="dialog-title">Termos de Uso do InfoHub</h3>
+          </div>
+          <button type="button" class="dialog-close-btn" data-close-modal aria-label="Fechar modal Termos de Uso">
+            &times;
+          </button>
+        </header>
+        <div class="dialog-body">
+          <p>
+            Ao utilizar o portal <strong>InfoHub UEMG Carangola</strong>, você concorda com os seguintes termos e condições:
+          </p>
+          <h4>1. Finalidade do Portal</h4>
+          <p>
+            O InfoHub opera exclusivamente como um centro agregador, informativo e facilitador de acesso aos serviços institucionais da Unidade Acadêmica de Carangola. O objetivo é desburocratizar o acesso a regulamentos, prazos e canais de contato.
+          </p>
+          <h4>2. Custódia e Links Externos</h4>
+          <p>
+            Os 10 serviços setoriais acessados através dos cartões foram desenvolvidos por estudantes da disciplina de Programação 2. A custódia técnica dos conteúdos e links oficiais é assegurada por meio de <em>forks</em> controlados na organização institucional da UEMG no GitHub, garantindo integridade e perenidade.
+          </p>
+          <h4>3. Atualização de Conteúdos</h4>
+          <p>
+            Embora todo esforço seja empregado para manter os dados perfeitamente sincronizados com o calendário letivo, prevalecem formalmente sobre qualquer informação deste portal os Editais Oficiais, Portarias da Reitoria e Resoluções vigentes da UEMG.
+          </p>
+          <h4>4. Propriedade Intelectual</h4>
+          <p>
+            O código-fonte deste projeto é de natureza educacional e de acesso público para fins acadêmicos. As marcas, brasões e logotipos da UEMG são de propriedade exclusiva da Universidade do Estado de Minas Gerais.
+          </p>
+        </div>
+        <footer class="dialog-footer">
+          <button type="button" class="dialog-action-btn" data-close-modal>Entendido</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <!-- Modal 3: Política de Privacidade & LGPD -->
+    <dialog id="modal-privacidade" class="app-dialog" aria-labelledby="modal-privacidade-title">
+      <div class="dialog-content">
+        <header class="dialog-header">
+          <div class="dialog-header-title-box">
+            <span class="dialog-badge">Proteção de Dados & LGPD</span>
+            <h3 id="modal-privacidade-title" class="dialog-title">Política de Privacidade & LGPD</h3>
+          </div>
+          <button type="button" class="dialog-close-btn" data-close-modal aria-label="Fechar modal Política de Privacidade">
+            &times;
+          </button>
+        </header>
+        <div class="dialog-body">
+          <p>
+            Esta política reafirma o compromisso do <strong>InfoHub UEMG Carangola</strong> com a transparência, a ética informacional e a conformidade irrestrita com a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018)</strong>.
+          </p>
+          <h4>1. Ausência de Coleta de Dados Pessoais</h4>
+          <p>
+            O InfoHub é uma aplicação estática e pública de consulta. <strong>Não coletamos, não solicitamos e não armazenamos nenhum dado pessoal identificável</strong> (como nome, CPF, e-mail ou matrícula acadêmica) dos visitantes para navegação na página principal.
+          </p>
+          <h4>2. Cookies e Rastreamento</h4>
+          <p>
+            O portal <strong>não utiliza cookies de rastreamento comercial ou publicitário</strong>. A navegação é completamente anônima.
+          </p>
+          <h4>3. Estatísticas Anônimas de Tráfego (Vercel Analytics)</h4>
+          <p>
+            A plataforma pode utilizar as estatísticas agregadas e nativas da infraestrutura de hospedagem (Vercel Web Analytics). Essa tecnologia opera no modelo <em>privacy-first / cookieless</em>, medindo exclusivamente métricas técnicas de desempenho de rede e total de requisições de forma anonimizada, sem gerar perfis de usuários ou identificadores individuais.
+          </p>
+          <h4>4. Armazenamento Local no Dispositivo (PWA)</h4>
+          <p>
+            Caso você instale o InfoHub no seu smartphone através dos recursos de PWA, arquivos essenciais da casca visual (HTML, ícones, CSS) serão armazenados localmente na memória do seu próprio navegador (Cache Storage) exclusivamente para acelerar o carregamento da aplicação.
+          </p>
+          <h4>5. Encarregado de Dados (DPO)</h4>
+          <p>
+            Para maiores esclarecimentos ou solicitações formais perante as diretrizes da UEMG acerca da LGPD, os titulares podem consultar a Ouvidoria e o portal oficial em <a href="https://www.uemg.br/" target="_blank" rel="noopener noreferrer">www.uemg.br</a>.
+          </p>
+        </div>
+        <footer class="dialog-footer">
+          <button type="button" class="dialog-action-btn" data-close-modal>Concordo</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <!-- Script Principal -->
+  </body>
+</html>
