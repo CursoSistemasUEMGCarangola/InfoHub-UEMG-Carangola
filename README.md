@@ -33,7 +33,7 @@ A plataforma atua como ponto focal seguro, moderno e de autoatendimento para tod
 O InfoHub organiza os serviços da universidade em uma grade balanceada de 5 linhas x 2 colunas no desktop (e coluna única e fluida em smartphones):
 
 | # | Setor / Tema | Descrição e Escopo | Categoria |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **01** | **Acesso Institucional & Sistemas** | Orientações de e-mail institucional, Portal do Aluno (Giz), Microsoft Teams e Wi-Fi do campus. | Acadêmico |
 | **02** | **Comissão Própria de Avaliação (CPA)** | Relatórios de autoavaliação institucional, pesquisas de clima acadêmico e planos de melhoria da unidade. | Institucional |
 | **03** | **Setor de Estágios & Empregabilidade** | Formulários de termo de compromisso, convênios de estágio obrigatório/não obrigatório e relatórios. | Carreira |
@@ -80,39 +80,47 @@ O projeto adota uma arquitetura **JAMstack Estática Pura (Zero-Backend)**, prio
 ## 🚀 6. Instalação e Execução Local
 
 ### Pré-requisitos
+
 * [Node.js](https://nodejs.org/) (versão 18 ou superior)
 * `npm` (versão 9 ou superior)
 
 ### Passo a Passo
 
 1. **Clonar o repositório:**
+
    ```bash
    git clone https://github.com/niltonfjunior2/InfoHub-UEMG-Carangola.git
    cd InfoHub-UEMG-Carangola
    ```
 
 2. **Instalar dependências de desenvolvimento:**
+
    ```bash
    npm install
    ```
 
 3. **Iniciar o servidor de desenvolvimento local:**
+
    ```bash
    npm run dev
    ```
+
    Acesse a aplicação no navegador em `http://localhost:5173/`.
 
 4. **Executar a suíte de testes automatizados:**
+
    ```bash
    npm test
    ```
 
 5. **Gerar build de produção otimizado:**
+
    ```bash
    npm run build
    ```
 
 6. **Pré-visualizar o build localmente:**
+
    ```bash
    npm run preview
    ```
@@ -123,13 +131,6 @@ O projeto adota uma arquitetura **JAMstack Estática Pura (Zero-Backend)**, prio
 
 ```plaintext
 InfoHub-UEMG-Carangola/
-├── .ai/                       # Artefatos de governança e memória da IA
-│   ├── PROJECT_DNA.md         # Restrições invioláveis e drivers arquiteturais
-│   ├── PRODUCT_BACKLOG.md     # Epics, Features e User Stories BDD
-│   ├── ROADMAP.md             # Fases táticas de desenvolvimento
-│   ├── LESSONS_LEARNED.md     # Memória de longo prazo e soluções de incidentes
-│   ├── boas_praticas.md       # Guia consolidado de boas práticas de engenharia
-│   └── rag.md                 # Protocolo de sustentação Day 2 e análise de impacto
 ├── dist/                      # Bundle de produção gerado pelo Vite
 ├── public/                    # Assets estáticos servidos diretamente
 │   ├── images/                # Fachadas, logotipos e ícones PWA
@@ -157,7 +158,8 @@ InfoHub-UEMG-Carangola/
 
 > Em consonância com as diretrizes contemporâneas de ética, transparência acadêmica e inovação pedagógica no ensino superior de computação, declara-se que este projeto utilizou ferramentas de **Inteligência Artificial Generativa (LLMs)** durante as etapas de concepção arquitetural, engenharia de software e refinamento de código.
 >
-> ### Papel da IA no Projeto:
+> ### Papel da IA no Projeto
+>
 > * **Pair Programming e Aceleração de Código:** A IA atuou como assistente técnico sob a supervisão direta do professor orientador e dos estudantes, auxiliando na geração de scaffolding semântico, refatoração cirúrgica e elaboração de testes automatizados.
 > * **Engenharia de Sustentação Baseada em Contexto (RAG):** Todas as intervenções foram orientadas por protocolos estritos de governança (`.ai/rag.md`), respeitando restrições invioláveis de segurança, ausência de custos e fidelidade à identidade visual da UEMG.
 > * **Responsabilidade Humana Integral:** Todo o código gerado, decisões arquiteturais, critérios de acessibilidade e validações de segurança foram criticamente revisados, testados e aprovados pelos docentes e discentes responsáveis pela disciplina. A IA não substitui o rigor conceitual nem a autoria intelectual pedagógica da extensão curricularizada.
